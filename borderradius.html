@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Propiedad border-radius</title>
+<style type="text/css">
+*{-webkit-transition:all 1s; -moz-transition:all 1s; transition:all 1s;} 
+a{ color:#FFFFFF; text-decoration:none;} span{ color:#666666; margin-top:200px;
+ display:inline-block; font-size:12px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+
+body {background:#000; margin:0; padding:0;text-align:center;}
+#module{
+	width:200px; 
+	height:200px;
+	background-color:#999999;
+	margin:20px; display:inline-block;
+	}
+
+.sencillo{border-radius:10px;}
+	
+.sencillo:hover{	border-radius:100px 10px 50px 0;}
+	
+.sencillo:active{	border-radius:60px;}
+
+.porcentaje{border-radius:25%;}
+	
+.porcentaje:hover{	border-radius:15% 5% 30% 60%;}
+	
+.porcentaje:active{	border-radius:100%;}
+
+
+.elipse{border-radius:50% / 25%;}
+	
+.elipse:hover{	border-radius:100% 30% / 100% 30%;} 
+	
+.elipse:active{border-radius:0% 100%/ 0% 100%;}
+
+
+.unidades{border-radius:220px 220px 30px 30px / 350px 350px 80px 80px;}
+	
+.unidades:hover{	border-radius:350px 350px 80px 80px / 220px 220px 80px 80px;} 
+	
+.unidades:active{border-radius:400px 0px 400px 0px / 220px 0px 220px 0px;}
+
+</style>
+</head>
+<body>
+
+	<div id="module" class="sencillo"></div>
+
+	<div id="module" class="elipse"></div>
+    
+    <br />
+
+	<div id="module" class="unidades"></div>
+
+	<div id="module" class="porcentaje"></div>
+    
+    <br />
+     
+    <span>Curso Integral de CSS3<br />
+    <a href="http://maweb.mx/" target="_blank">maweb.mx/</a></span>
+
+</body>
+
+
+
+</html>
+<!--
+// En este ejercicio se prueba el uso multibackgrounds y la manera en que pueden llegar a ser utilizados
+-->
+
